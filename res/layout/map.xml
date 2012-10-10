@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:apiKey="0ggmsULpx5gWnKdIEw2m1AmGVAPURVYY-LhPUYw"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp" >
+
+        <Button
+            android:id="@+id/bt_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="Nuevo" />
+
+        <Button
+            android:id="@+id/bt_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bt_new"
+            android:layout_alignBottom="@+id/bt_new"
+            android:layout_toRightOf="@+id/bt_new"
+            android:text="Perfil" />
+
+        <Button
+            android:id="@+id/bt_reports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bt_profile"
+            android:layout_alignBottom="@+id/bt_profile"
+            android:layout_toRightOf="@+id/bt_profile"
+            android:text="Reportes" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_general"
+    android:onClick="checkAndHideKeyboard"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_user_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tv" />
+
+        <TextView
+            android:id="@+id/lb_user"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/user"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/ed_user_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/lb_user"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:digits = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789-"
+            android:singleLine="true"
+            android:text="carlos" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_email_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/rl_user_sign_up"
+        android:layout_centerHorizontal="true" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tv" />
+
+        <TextView
+            android:id="@+id/lb_email_sign_up"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/email"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/ed_email_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/lb_email_sign_up"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="fereyr@gmail.com"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rl_email_sign_up"
+        android:layout_below="@+id/rl_email_sign_up"
+        android:text="@string/lb_recover" />
+
+    <RelativeLayout
+        android:id="@+id/rl_pass_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/rl_email_sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tv" />
+
+        <TextView
+            android:id="@+id/lb_pass_sign_up"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/password"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/ed_pass_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/lb_pass_sign_up"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="qqqq"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pass_corfim_pass_up"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/rl_pass_sign_up"
+        android:layout_centerHorizontal="true" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tv" />
+
+        <TextView
+            android:id="@+id/lb_confirmpass_sign_up"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/corfirmar"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/ed_confirmpass_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/lb_confirmpass_sign_up"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="qqqq"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rl_pass_corfim_pass_up"
+        android:layout_below="@+id/rl_pass_corfim_pass_up"
+        android:text="@string/lb_confirm_pass" />
+
+    <Button
+        android:id="@+id/bt_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/signup" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_general"
+    android:orientation="vertical"
+    android:onClick="checkAndHideKeyboard"
+    android:padding="20dp" >
+
+    <ImageView
+        android:id="@+id/iv_icon_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_user"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/iv_icon_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_tv" />
+
+        <TextView
+            android:id="@+id/lb_email"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/email"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/lb_email"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rl_email"
+        android:layout_below="@+id/rl_email"
+        android:text="@string/lb_recover" />
+
+    <Button
+        android:id="@+id/bt_recover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/send" />
+
+</RelativeLayout>
